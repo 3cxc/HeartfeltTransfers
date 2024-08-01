@@ -12,7 +12,7 @@
             if(key_exists('type',$query_arr)){
                 #遍历匹配
                 foreach ($type_array as $tmp){
-                    if(strpos($query_arr['type'],$tmp) !== false){
+                    if($query_arr['type'] == $tmp){
                         return $tmp;
                     }
                 }
